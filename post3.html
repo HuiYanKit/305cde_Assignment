@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stop drug-post</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="./css/agency.css">
+
+  </head>
+  
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Stop drug!</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/index">Introduce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/post">post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/example">example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/video">video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/login" id="lonin">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/mylist" id="favorvitelist">my favorvite list</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/index" id="logout">log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To My website!</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="addlist">Add to my favorvite list</a>
+        </div>
+      </div>
+    </header> 
+    <form class = post>
+    <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Problem and Solution: Drug Abuse Essay</h2>
+            <h3 class="section-subheading text-muted">Paragraph 1: Introduction
+
+
+
+Drug abuse is rife in many countries. Billions of dollars are spent internationally preventing drug use, treating addicts, and fighting drug-related crime. 
+
+ Although drugs threaten many societies, their effects can also be combated successfully. 
+
+This essay looks at some of the effects of drug use on society, and suggests some solutions to the problem.
+
+Paragraph 2: Problem
+
+
+
+Drug abuse causes multiple problems for countries and communities. 
+
+The medical and psychological effects are very obvious. 
+
+Addicts cannot function as normal members of society. They neglect or abuse their families, and eventually require expensive treatment or hospitalization.
+
+
+
+The second effect is on crime. 
+
+Huge police resources are needed to fight smuggling and dealing. Criminal gangs and mafia underworlds develop with the money from drugs.
+
+Paragraph 3: Solution
+
+
+
+However, the menace of drugs can be fought. 
+
+Education is the first battle. 
+
+Children need to be told at home and in school about drugs. People need to be aware of the effects so that they can avoid A second approach is to increase police manpower and create effective laws to stop dealers. 
+
+However the main target should be the user 
+
+: Families and counselors need to talk to children and people at risk. Parents need to look at their children and help them to become responsible. Worthwhile jobs and housing are also needed to give people a role in society.
+
+Paragraph 4: Conclusion
+
+
+
+In conclusion, although the problem of drugs may seem impossible to eliminate, there are concrete steps that can be taken to weaken the hold of drugs on society. 
+
+The danger from drugs is too great to ignore for us and our children.</h3>
+          </div>
+  </form>
+        <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+  var id =window.localStorage.getItem("id");
+if(id == "NULL"){
+  $("#favorvitelist").hide();
+  $("#logout").hide();
+  $("#login").show();
+}
+  else{
+    $("#favorvitelist").show();
+    $("#logout").show();
+    $("#login").hide();
+  }
+});
+</script>
+<script>
+ $(document).ready(function(){
+    $("#logout").click(function(){		
+							window.localStorage.setItem("id", "NULL");
+    });
+});
+</script>
+  <script>
+    $(document).ready(function(){
+    $("#addlist").click(function(){
+      var x = ($("h2").text());
+      var id = window.localStorage.getItem("id");
+			var link = "post3";
+			alert(id+x);
+			
+			   $.ajax(
+      {
+      url: "http://port-5678.database-yankit0317561993.codeanyapp.com/addlist", 
+      type: 'POST',
+      data: ("&title="+$("h2").text()+"&myid="+id+"&post="+link),
+      success: function(result){
+				if(result=="sucess"){
+          alert("add to list sucess");
+				}
+          },error: function (xhr, textStatus, errorThrown) {
+alert(textStatus);
+                         console.log(textStatus);
+
+                     }
+      });	 		
+    });
+});
+  </script>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stop drug-post</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="./css/agency.css">
+
+  </head>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Stop drug!</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/index">Introduce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/post">post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/example">example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/video">video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/login" id="lonin">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/mylist" id="favorvitelist">my favorvite list</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/index" id="logout">log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     <section class="bg-light" id="post">
+       <div>
+       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for title.." title="Type in a title">
+       </div>
+      <div class="container">
+        <div class="row">
+          <li>
+          <h2 class="section-heading text-uppercase"><a href="/post1">Top 5 Ways to Prevent Substance Abuse</a></h2>
+          <h3 class="section-subheading text-muted"><a>While it’s practically impossible to prevent anyone and everyone from using drugs, there are things we can all do to avoid drug and/or alcohol abuse. By sharing this knowledge with those closest to you, you yourself may be able to prevent them from doing drugs, too. Here are the top five ways to help prevent drug abuse:
+</a></h3>
+          </li>
+          <li>
+          <h2 class="section-heading text-uppercase"><a href="/post2">What Are Some Solutions to Drug Abuse?</a></h2>
+          <h3 class="section-subheading text-muted"><a>Drug abuse occurs when people being using drugs for one reason or another and their use develops into an intense desire and need for the substance. This need and desire outweighs the person’s need for need for success in his relationship, career or academics. The Center for Substance Abuse Prevention reports that overcoming drug abuse is important because of the significant amount of money in retroactive actions drug problems cost the American people every year.
+</a></h3>
+          </li>
+        <li>
+          <h2 class="section-heading text-uppercase"><a href="/post3">Problem and Solution: Drug Abuse Essay</a></h2>
+          <h3 class="section-subheading text-muted"><a>Drug abuse is rife in many countries. Billions of dollars are spent internationally preventing drug use, treating addicts, and fighting drug-related crime. 
+
+ Although drugs threaten many societies, their effects can also be combated successfully. 
+
+This essay looks at some of the effects of drug use on society, and suggests some solutions to the problem.</a></h3>
+          </li>
+          <li>
+          <h2 class="section-heading text-uppercase"><a href="/post4">Post-9/11 drug- and alcohol- related hospitalizations among World Trade Center Health Registry enrollees, 2003–2010</a></h2>
+          <h3 class="section-subheading text-muted"><a>To describe patterns of drug- and alcohol only-related hospitalizations among persons exposed to the 2001 World Trade Center (WTC) terrorist attacks and to assess whether 9/11-related exposures or post-9/11 post-traumatic stress disorder (PTSD) were associated with increased odds of hospitalization.</a></h3>
+          </li>
+        </div>
+       </div>
+    </section>
+       <script>function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("post");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}</script>
+      <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+  var id =window.localStorage.getItem("id");
+if(id == "NULL"){
+  $("#favorvitelist").hide();
+  $("#logout").hide();
+  $("#login").show();
+}
+  else{
+    $("#favorvitelist").show();
+    $("#logout").show();
+    $("#login").hide();
+  }
+});
+</script>
+<script>
+ $(document).ready(function(){
+    $("#logout").click(function(){		
+							window.localStorage.setItem("id", "NULL");
+    });
+});
+</script>
+</html>
+       

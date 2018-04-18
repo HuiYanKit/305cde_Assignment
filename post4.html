@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stop drug-post</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="./css/agency.css">
+
+  </head>
+  
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Stop drug!</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/index">Introduce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/post">post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/example">example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/video">video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/login" id="lonin">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/mylist" id="favorvitelist">my favorvite list</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/index" id="logout">log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To My website!</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="addlist">Add to my favorvite list</a>
+        </div>
+      </div>
+    </header> 
+    <form class = post>
+    <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Post-9/11 drug- and alcohol- related hospitalizations among World Trade Center Health Registry enrollees, 2003–2010</h2>
+            <h3 class="section-subheading text-muted">
+Objective
+
+To describe patterns of drug- and alcohol only-related hospitalizations among persons exposed to the 2001 World Trade Center (WTC) terrorist attacks and to assess whether 9/11-related exposures or post-9/11 post-traumatic stress disorder (PTSD) were associated with increased odds of hospitalization.
+
+Methods
+
+Data for adult enrollees in the WTC Health Registry, a prospective cohort study, were linked to New York State (NYS) administrative hospitalization data to identify alcohol- and drug-related hospitalizations from enrollment to December 31, 2010. Logistic regression was used to analyze the associations between substance use-related hospitalization, 9/11-related exposure and PTSD.
+
+Results
+
+Of 41,176 NYS resident enrollees, we identified 626 (1.5%) who had at least one alcohol- or drug-related hospitalization; 53.4% (n = 591) of these hospitalizations were for alcohol only diagnoses and 46.6% (n = 515) were drug-related. Witnessing ≥3 traumatic events on 9/11 was significantly associated with having a drug-related hospitalization (AOR 1.4, 95% CI = [1.1, 1.9]). PTSD was significantly associated with both having a drug-related hospitalization as well as an alcohol only-related hospitalization. (AOR 2.6, 95% CI = [2.0, 3.3], AOR 1.8, 95% CI = [1.4, 2.3], respectively).
+
+Conclusions
+
+Witnessing traumatic events and having PTSD were independently associated with substance use-related hospitalizations. Targeting people who witnessed traumatic events on 9/11 and/or who have PTSD for substance use-related help could reduce alcohol and drug-related hospitalizations connected to 9/11.
+
+Keywords
+World Trade Center; 
+Longitudinal study; 
+Drug hospitalization; 
+Alcohol hospitalization; 
+Post-traumatic stress disorder
+</h3>
+          </div>
+  </form>
+        <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+  var id =window.localStorage.getItem("id");
+if(id == "NULL"){
+  $("#favorvitelist").hide();
+  $("#logout").hide();
+  $("#login").show();
+}
+  else{
+    $("#favorvitelist").show();
+    $("#logout").show();
+    $("#login").hide();
+  }
+});
+</script>
+<script>
+ $(document).ready(function(){
+    $("#logout").click(function(){		
+							window.localStorage.setItem("id", "NULL");
+    });
+});
+</script>
+  <script>
+    $(document).ready(function(){
+    $("#addlist").click(function(){
+      var x = ($("h2").text());
+      var id = window.localStorage.getItem("id");
+			var link = "post4";
+			alert(id+x);
+			
+			   $.ajax(
+      {
+      url: "http://port-5678.database-yankit0317561993.codeanyapp.com/addlist", 
+      type: 'POST',
+      data: ("&title="+$("h2").text()+"&myid="+id+"&post="+link),
+      success: function(result){
+				if(result=="sucess"){
+          alert("add to list sucess");
+				}
+          },error: function (xhr, textStatus, errorThrown) {
+alert(textStatus);
+                         console.log(textStatus);
+
+                     }
+      });	 		
+    });
+});
+  </script>
